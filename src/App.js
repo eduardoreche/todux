@@ -9,7 +9,7 @@ let store = createStore(todoStore);
 class App extends Component {
   render() {
     return (
-      <Provider store={todoStore}>
+      <Provider store={store}>
         <TodoApp />
       </Provider>
     );

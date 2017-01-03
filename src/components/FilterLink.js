@@ -1,4 +1,3 @@
-import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Link from './Link';
 import { setVisibilityFilter } from '../actions/setVisibilityFilter';
