@@ -1,5 +1,15 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 10px;
   font-family: sans-serif;
+}
+
+.app-title {
+  text-align: center;
+}
+
+#root {
+  width: 400px;
+  width: 50%;
+  margin: auto;
 }
