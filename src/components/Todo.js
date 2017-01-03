@@ -5,10 +5,10 @@ const Todo = ({
   completed,
   text
 }) => (
-   <li onClick={onClick}
+   <a href="#" className="list-group-item" onClick={onClick}
       style={{ textDecoration: completed ? 'line-through' : 'none' }}>
-    {text}
-   </li>
+     {text}
+   </a>
 );
 
 Todo.propTypes = {

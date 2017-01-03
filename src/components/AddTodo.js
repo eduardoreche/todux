@@ -6,25 +6,25 @@ let AddTodo = ({ dispatch }) => {
   let input;
 
   return (
-    <form className="form-inline">
-      <div className="form-group">
-        <input 
-          className="form-control"
-          ref={node => {
-            input = node;
-          }} />
-        <button type="submit" 
-          className="btn btn-default"
-          onClick={(e) => {
-            e.preventDefault();
-            dispatch(addTodo(input.value));
-            input.value = '';
-          }
-        }>
-          Add
-        </button>
-      </div>
-    </form>
+    <div className="row">
+      <form 
+        onSubmit={(e) => {
+          e.preventDefault();
+          dispatch(addTodo(input.value));
+          input.value = '';
+        }}>
+        
+        <div className="form-group">
+          <input 
+            className="form-control"
+            placeholder="What needs to be done?"
+            ref={node => {
+              input = node;
+            }} />
+          
+        </div>
+      </form>
+    </div>
   )
 };
 
